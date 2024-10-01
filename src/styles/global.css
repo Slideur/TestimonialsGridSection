@@ -155,7 +155,7 @@ footer {
 	left: 43%;
 }
 
-@media all and (max-width: 1440px) {
+@media all and (max-width: 1000px) {
 	.container {
 		width: 20%;
 	}
