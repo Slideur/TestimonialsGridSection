@@ -14,11 +14,10 @@
 	margin: 0;
 }
 
-body {
+/* body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
-}
-
+} */
 img,
 picture,
 video,
@@ -50,10 +49,6 @@ h6 {
 	isolation: isolate;
 }
 
-html {
-	min-width: 300px;
-}
-
 body {
 	background-color: hsl(210, 46%, 95%);
 	font-size: 0.813rem;
@@ -62,8 +57,10 @@ body {
 }
 
 .container {
-	width: 1000px;
-	margin: 0 auto;
+	display: flex;
+	min-height: 100svh;
+	justify-content: center;
+	align-content: center;
 }
 
 #grid {
@@ -71,7 +68,7 @@ body {
 	grid-auto-columns: 2fr 2fr 2fr 2fr;
 	column-gap: 20px;
 	row-gap: 20px;
-	padding-top: 60px;
+	max-width: 62.5rem;
 }
 
 h1 {
@@ -99,6 +96,12 @@ p {
 	margin-top: 25px;
 }
 
+.allfamily {
+	color: hsl(0, 0%, 100%);
+	padding: 10px 30px 30px 30px;
+	border-radius: 7px;
+}
+
 .clifford {
 	grid-column-start: 1;
 	grid-column-end: 3;
@@ -108,9 +111,6 @@ p {
 	background-repeat: no-repeat;
 	background-position: 82% 0%;
 	background-color: hsl(263, 55%, 52%);
-	color: hsl(0, 0%, 100%);
-	padding: 10px 30px 30px 30px;
-	border-radius: 7px;
 }
 
 .walters {
@@ -119,9 +119,6 @@ p {
 	grid-row-start: 1;
 	grid-row-end: 2;
 	background-color: hsl(217, 19%, 35%);
-	color: hsl(0, 0%, 100%);
-	padding: 10px 30px 30px 30px;
-	border-radius: 7px;
 }
 
 .whittle {
@@ -130,9 +127,7 @@ p {
 	grid-row-start: 1;
 	grid-row-end: 3;
 	background-color: hsl(0, 0%, 100%);
-	/* padding: 10px 30px 30px 30px; */
-	padding: 20px;
-	border-radius: 7px;
+	color: inherit;
 	box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
@@ -148,8 +143,7 @@ p {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	background-color: hsl(0, 0%, 100%);
-	padding: 10px 30px 30px 30px;
-	border-radius: 7px;
+	color: inherit;
 	box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
 	-webkit-box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 4px 2px 16px -2px rgba(0, 0, 0, 0.75);
@@ -161,9 +155,6 @@ p {
 	grid-row-start: 2;
 	grid-row-end: 3;
 	background-color: hsl(219, 29%, 14%);
-	color: hsl(0, 0%, 100%);
-	padding: 10px 30px 30px 30px;
-	border-radius: 7px;
 }
 
 .veri {
@@ -236,30 +227,6 @@ footer {
 	footer {
 		position: static;
 		margin-top: 15px;
-	}
-}
-
-@media all and (max-width: 800px) {
-	.container {
-		width: 34rem;
-	}
-}
-
-@media all and (max-width: 600px) {
-	.container {
-		width: 24rem;
-	}
-}
-
-@media all and (max-width: 500px) {
-	.container {
-		width: 15.625rem;
-	}
-}
-
-@media all and (max-width: 450px) {
-	.container {
-		width: 14.063rem;
 	}
 }
 
